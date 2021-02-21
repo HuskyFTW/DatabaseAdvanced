@@ -1,7 +1,7 @@
 # Database Advanced
 Lijst van alle taken die gemaakt werden voor Database Advanced.
 
-## Scraper
+<span style="color: green"> ## Scraper </span>
 ### Imports
 Voor mijn scraper heb ik eerst alle nodige modules geimporteerd om de juiste informatie te scrapen/analyseren. Modules die werden geimporteeerd (= bs4, time, requests, pandas)
 
