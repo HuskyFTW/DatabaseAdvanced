@@ -20,7 +20,7 @@ def scrape():
     print(df.max().to_string())
     file1.write(df.max().to_string() + '\n')  
     file1.close() 
-    time.sleep(5)
+    time.sleep(60)
     scrape()
 
 scrape()
