@@ -1,0 +1,35 @@
+version : '3.3'
+
+services: 
+  mongo: 
+    image: mongo
+    # container_name: mongoDB
+    restart: always
+    ports: 
+      # Host / Docker container
+      - 30000:27017
+
+  redis:
+    image: redis
+    # container_name: redis
+    restart: always
+    ports:
+      - 7000:6379
+
+  mongoexpress:
+    image: mongo-express
+    environment:
+      - ME_CONFIG_MONGODBSERVER=mongo
+    ports:
+      - 8081:8081
+
+  scraper:
+     build: .
+     ports:
+      - 5000:5000
+    
+# volumes:
+#   mongoVolume: 
+
+
+# networks:
