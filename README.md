@@ -1,6 +1,6 @@
 # Database Advanced - Assignments
 
-## 1.BitcoinScraper
+## 1. BitcoinScraper
 - Setup a Kubuntu environment.
 - Install python 3
 - Create a scraper to collect all the bitcoin information every 60seconds
