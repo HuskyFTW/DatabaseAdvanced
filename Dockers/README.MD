@@ -8,8 +8,8 @@ sudo apt install docker.io
 ```
 docs.docker.com/compose/gettingstarted/
 ```
-1. Define all out docker dependencies.
-2. Create a Dockerfile. The dockerfile builds the docker image. The image contains all the dependencies our python applications needs. We build the docker on a Python environment.
+#### 1. Define all out docker dependencies.
+#### 2. Create a Dockerfile. The dockerfile builds the docker image. The image contains all the dependencies our python applications needs. We build the docker on a Python environment.
 
 ```
 # Image
@@ -27,7 +27,7 @@ RUN pip3 install beautifulsoup4
 COPY scraper.py scraper.py
 CMD ["python3", "scraper.py"]
 ```
-3. Define services in our docker-compose file.
+#### 3. Define services in our docker-compose file.
 ```
 version : '3.3'
 
@@ -60,7 +60,7 @@ services:
       - 5000:5000
 ```
 
-4. Bash script to build/run our docker compose.
+#### 4. Bash script to build/run our docker compose.
 ```
 # !/bin/bash
 
@@ -69,6 +69,7 @@ sudo docker-compose build
 sudo docker-compose up 
 ```
 
-5. MongoExpress
+#### 5. MongoExpress
+Used as a web-basezd administrative interface to interact with my MongoDB database. Using localhost:8180 you can access the database.
 
 ![alt text](https://i.imgur.com/6IFsMgz.png)
